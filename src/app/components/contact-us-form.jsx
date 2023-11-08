@@ -49,9 +49,9 @@ function ContactUsForm() {
   });
   
   const form = useRef();
-  const serviceID = `service_gtqlmbv`;
-  const templateID = `template_8j6znel`;
-  const pk = `_-L5cho169JnZ6n72`;
+  const serviceID = process.env.NEXT_EMAIL_SERVICE;
+  const templateID = process.env.NEXT_EMAIL_TEMPLATE;
+  const pk = process.env.NEXT_EMAIL_SERVICE;
 
   const sendEmail = (e) => {
     e.preventDefault();

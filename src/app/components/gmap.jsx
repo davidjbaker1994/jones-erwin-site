@@ -14,7 +14,7 @@ function GMap(height) {
   useEffect(() => {
     //Figure out hiding before you push it to repo
     const loader = new Loader({
-      apiKey: 'AIzaSyC4uWOlI8zmNC90h5e4NfxxnwYKqs1X710',
+      apiKey: process.env.GMAPS,
       version: "weekly",
     });
     let map;
